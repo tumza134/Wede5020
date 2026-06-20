@@ -1,0 +1,133 @@
+html{
+  scroll-snap-type: y mandatory;
+}
+* {
+  margin: 0;
+  padding: 0;
+  min-height: 10vh;
+  min-width: 16vw;
+  
+}
+header{
+  background-color: rgb(64, 86, 85);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 999;
+  position: relative;
+  width: clamp(fit-content, 300px, 100%);
+  margin: 0 auto;
+  padding: 0.3rem 0.1rem;
+}
+.container {
+ width: 100%;
+ align-items: center;
+}
+
+.nav1 {
+  background-color: rgb(64, 86, 85);
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.bar {
+  
+  display: flex ;
+  justify-content: right;
+  align-items: center;
+}
+
+.bar li {
+  background-color: rgb(64, 86, 85);
+  height: 100%;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  color: var(--text-color);
+}
+
+.bar li a {
+  color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.bar li a:hover {
+  background-color: rgb(101, 109, 109);
+  transition: 300ms;
+  border-radius: 10px;
+  transform: scale(0.9);
+  box-shadow: 9px 4px 16px 4px rgba(22, 72, 210, 0.4);
+}
+
+body {
+  background-color: rgb(237, 237, 237);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;  
+  
+  justify-content: center;
+}
+
+
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: calc(90vh - 6rem);
+}
+
+.nav2{
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr 1fr;
+  grid-template-rows: 1fr 0.5fr ;
+  grid-gap: 10px 10px;
+}
+
+
+.box1 {
+grid-row: 1;
+grid-column: 2;
+}
+.welcome {
+  font-size: 2.5rem;
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  text-align: center;
+}
+
+.box2 {
+grid-row: 2;
+grid-column: 2/4;
+justify-content: wrap;
+}
+.p1 {
+  padding: 4px;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  width: 110%;
+  height: 30%;
+}
+
+.box3 {
+grid-row: 1;
+grid-column: 3;
+}
+
+
+
+
+
+footer {
+  background-color: rgb(64, 86, 85);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  clear: both;
+}
